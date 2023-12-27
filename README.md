@@ -98,7 +98,7 @@ class ChatBot:
 
     def chat(self):
         for message in self._messages:
-            with st.chat_message[message["role"]]:
+            with st.chat_message(message["role"]):
                 st.markdown(message["content"])
 
         if len(self._messages) >= self._max_messages:
