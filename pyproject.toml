@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "streamlit-test03"
+version = "0.1.0"
+description = ""
+authors = ["Freeman Long <goldyard@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+streamlit = "^1.29.0"
+watchdog = "^3.0.0"
+openai = "^1.6.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "main:main"
